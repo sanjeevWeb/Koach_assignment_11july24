@@ -1,0 +1,24 @@
+Description -
+
+    This is a basic api for tanslating english (signed-language). In the request body you need to pass a text
+    and the converted text will be send in response ( the same text for now, no converting mechanism)
+
+Steps to run - 
+
+    1. clone the repo with commnad (in terminal ) >> git clone https://github.com/sanjeevWeb/Koach_assignment_11july24.git
+
+    2. navigate to text_simulator folder and run >> nom install ( to install all dependencies)
+
+    3. run >> npm run start:dev ( will start the server)
+
+    4. MongoDb must be runnig (compass or atlas(cloud)) and pass the url in connectDB func or make an .env file
+
+    5. go to postman and hit api "http://localhost:5000/api/v1", HTTP method- POST as it is saved in database and 
+      need to access body
+
+    6. Must pass a string in body as object e.g -> { "text": "Hello Koach team" }
+
+    7. refer API docs if required - 
+
+    8. API docs - https://documenter.getpostman.com/view/29795181/2sA3e4AUHM
+                                                    
