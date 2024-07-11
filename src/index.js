@@ -18,6 +18,7 @@ connectDB(process.env.MONGODB_URI)
 //router middleware
 app.use('/api/v1', textRouter)
 
+
 app.listen(process.env.PORT, () => {
     console.log(`server running on port ${process.env.PORT}`);
 })

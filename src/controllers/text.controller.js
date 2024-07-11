@@ -28,8 +28,12 @@ async function translateText(req, res, next) {
 };
 
 function checkEnglish(text) {
-   
+
     return /^[a-zA-Z0-9\s]*$/.test(text);
 };
 
-module.exports = translateText
+
+function test(req, res, next) {
+    return res.status(200).send("Hello Koach")
+}
+module.exports = { translateText, test }
